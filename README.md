@@ -1,5 +1,9 @@
-# mio-mod-template
-A mod template for MIO: Memories in Orbit
+# mio-purple
+A mod for MIO: Memories in Orbit
+<details>
+  <summary>End-game spoiler warning</summary>
+  This mod puts the player in a state where Ati is always holding Mio. The mod is named mio-purple because Ati's primary color is purple.
+</details>
 
 ## Prerequisites
 
@@ -7,7 +11,6 @@ A mod template for MIO: Memories in Orbit
 - MSVC (Visual Studio 2019 or later)
 - vcpkg
 - Ninja
-  
 
 ## Building
 
@@ -22,5 +25,5 @@ cmake --build --preset x64-release
 
 ### Running in Game
 
-1. Copy `build/x64-release/bin/my_mod.dll` into your MIO install's `mods` directory
+1. Copy `build/x64-release/bin/mio_purple.dll` into your MIO install's `mods` directory
 2. Launch the game
