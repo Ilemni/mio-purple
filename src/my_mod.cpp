@@ -20,7 +20,7 @@ DWORD WINAPI MyModCode(LPVOID) {
             continue; // Wait until save is loaded
         }
 
-        WriteMemoryTyped(playerIsAtiPtr, 1);
+        WriteMemoryTyped(playerIsAtiPtr, static_cast<byte>(1));
         Sleep(1000); // Sleep 1s
     }
     return 0;
