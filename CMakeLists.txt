@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(MyMod VERSION 0.0.1)
+project(MioPurple VERSION 0.0.1)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -14,19 +14,19 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
-add_library(my_mod MODULE
+add_library(mio_purple MODULE
     src/my_mod.cpp
 )
 
-target_link_libraries(my_mod PRIVATE
+target_link_libraries(mio_purple PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/lib/winhttp.lib
 )
 
-target_include_directories(my_mod PRIVATE
+target_include_directories(mio_purple PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-set_target_properties(my_mod PROPERTIES
+set_target_properties(mio_purple PROPERTIES
     PREFIX ""
     SUFFIX ".dll"
 )
